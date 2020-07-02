@@ -1,0 +1,14 @@
+<form action="">
+    <div>
+        <label for="book_Name">Name of the book:</label>
+        <input type="text" [formControl]="book_name" id="book_Name" ><br>
+    </div>
+
+    
+    <div>
+        <label for="author">author:</label>
+        <input type="text" [formControl]="author" id="author" name="fname"><br>
+    </div>
+
+    <button (click)="save()" type="button">AddBook</button>
+</form>

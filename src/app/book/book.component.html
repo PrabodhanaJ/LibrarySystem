@@ -1,0 +1,10 @@
+
+<form action="http://localhost:4200/book/add-new-book">
+<input type="submit" value="add new book "/>
+</form>
+
+<ul class="books">
+  <li *ngFor = "let book of books">
+    <span class="badge">{{book.book_ref_no}}</span> {{book.book_name}}
+  </li>
+</ul>

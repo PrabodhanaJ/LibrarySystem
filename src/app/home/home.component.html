@@ -1,0 +1,19 @@
+<table style="width:100%">
+  <th >
+<div class="split-left">
+<ul class="books">
+    <li *ngFor = "let book of books"
+        [class.selected]= "book === selectedBook"
+        (click)="onSelect(book)">
+      <span class="badge">{{book.book_ref_no}}</span> {{book.book_name}}
+    </li>
+  </ul>
+</div>
+</th>
+
+<th style="width:40%">
+<div class="split-right">
+  <app-book-details [book] = "selectedBook"></app-book-details>
+</div>
+</th>
+</table>
